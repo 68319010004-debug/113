@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- เชื่อมไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="form-box">
+
+            <h2>สมัครสมาชิก</h2>
+
+            <!-- Text Box -->
+            <div class="form-group">
+                <label>ชื่อ-นามสกุล</label>
+                <input type="text" name="fullname" required minlength="3">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" required minlength="8">
+            </div>
+
+            <!-- Radio Button -->
+            <div class="form-group">
+                <label>เพศ</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        ชาย
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        หญิง
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        อื่นๆ
+                    </label>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label>ความสนใจ</label>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> กีฬา</label>
+                    <label><input type="checkbox"> ดนตรี</label>
+                    <label><input type="checkbox"> เทคโนโลยี</label>
+                </div>
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+                <label>จังหวัด</label>
+
+                <select required>
+                    <option value="">-- เลือกจังหวัด --</option>
+                    <option>กรุงเทพมหานคร</option>
+                    <option>ขอนแก่น</option>
+                    <option>กาฬสินธุ์</option>
+                    <option>เชียงใหม่</option>
+                    <option>ภูเก็ต</option>
+                </select>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label>แนะนำตัว</label>
+
+                <textarea rows="5" placeholder="กรอกข้อมูลเกี่ยวกับตัวคุณ"></textarea>
+            </div>
+
+            <!-- Validation จุดที่ 4 -->
+            <div class="form-group terms">
+                <label>
+                    <input type="checkbox" required>
+                    ยอมรับเงื่อนไขการใช้งาน
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn-submit">
+                สมัครสมาชิก
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
